@@ -1,0 +1,66 @@
+:root {
+  --main-color: #870004;
+  --main-color-alpha: rgba(135, 0, 4, 0.8);
+}
+
+@font-face {
+  font-family: "5x5";
+  src: url("5x5.ttf") format("truetype");
+}
+
+html,
+body {
+  background-color: black;
+  color: var(--main-color);
+  font-family: "5x5", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 25px;
+  padding-top: 50px;
+}
+
+.logo {
+  width: 300px;
+  height: auto;
+  margin: auto;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  max-width: 400px;
+  padding: 64px;
+
+  border-image-slice: 176 194 176 194;
+  border-image-width: 50px 55px 50px 55px;
+  border-image-repeat: round round;
+  border-image-source: url(frame.png);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.top-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  text-decoration: none;
+}
+
+.top-banner a {
+  color: var(--main-color);
+}
